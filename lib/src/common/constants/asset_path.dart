@@ -9,7 +9,7 @@ class AssetPaths {
   static const String flameIcon = 'assets/icons/nav_icons/flame.svg';
   static const String profileIcon = 'assets/icons/nav_icons/profile.svg';
 
-  static const String background = 'assets/images/background.jpg';
+  static const String background = 'assets/images/background.png';
 
   // Group assets logically
   static const String lottieLoading = 'assets/lottie/loading.json';

@@ -7,28 +7,47 @@ class BottomNavWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      items: [
-        BottomNavigationBarItem(
+    return ClipRRect(
+      borderRadius: const BorderRadius.only(
+        topLeft: Radius.circular(16),
+        topRight: Radius.circular(16),
+      ),
+      child: BottomNavigationBar(
+        backgroundColor:
+            Theme.of(context).bottomNavigationBarTheme.backgroundColor,
+        type: BottomNavigationBarType.fixed,
+        fixedColor: const Color(0xFF0F1115),
+        items: [
+          BottomNavigationBarItem(
             icon: SvgPictureAdapter.asset(AssetPaths.cardIcon),
-        ),
-        BottomNavigationBarItem(
+            label: "",
+          ),
+          BottomNavigationBarItem(
             icon: Badge(
                 padding: EdgeInsets.zero,
                 label: const Text(""),
                 offset: const Offset(10, -5),
-                child: SvgPictureAdapter.asset(AssetPaths.flameIcon)
-            ),
-        ),
-        BottomNavigationBarItem(
+                child: SvgPictureAdapter.asset(AssetPaths.flameIcon)),
+            label: "",
+          ),
+          BottomNavigationBarItem(
             icon: Badge(
-                label: const Text("10"),
+                label: const Text(
+                  "10",
+                  style: TextStyle(
+                    color: Color(0xFF0F1115),
+                    fontSize: 7,
+                  ),
+                ),
                 child: SvgPictureAdapter.asset(AssetPaths.chatIcon)),
-        ),
-        BottomNavigationBarItem(
+            label: "",
+          ),
+          BottomNavigationBarItem(
             icon: SvgPictureAdapter.asset(AssetPaths.profileIcon),
-        ),
-      ],
+            label: "",
+          ),
+        ],
+      ),
     );
   }
 }
