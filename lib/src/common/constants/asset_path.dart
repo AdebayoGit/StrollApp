@@ -9,6 +9,14 @@ class AssetPaths {
   static const String flameIcon = 'assets/icons/nav_icons/flame.svg';
   static const String profileIcon = 'assets/icons/nav_icons/profile.svg';
 
+  // Profile Page Assets
+  static const String timerIcon = 'assets/icons/timer.svg';
+  static const String peopleIcon = 'assets/icons/people.svg';
+  static const String arrowDownIcon = 'assets/icons/arrow_down.svg';
+
+  // Placeholder Images
+  static const String userImage = 'assets/images/placeholders/Joey 2.png';
+  // Background Images
   static const String background = 'assets/images/background.png';
 
   // Group assets logically

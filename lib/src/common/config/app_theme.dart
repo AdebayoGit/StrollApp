@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'custom_shadow_colors.dart';
+
 class AppTheme {
+  static const Color headerBoxShadow1 = Color(0xFF000033);
+  static const Color headerBoxShadow2 = Color(0xFFBEBEBE);
+  static const Color headerBoxShadow3 = Color(0xFF24232F);
+
   static ThemeData lightTheme = ThemeData(
     primarySwatch: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
@@ -38,6 +44,14 @@ class AppTheme {
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       backgroundColor: Color(0xFF0F1115),
     ),
+    shadowColor: headerBoxShadow1,
+    extensions: const <ThemeExtension<dynamic>>[
+      CustomShadowColors(
+        shadow1: headerBoxShadow1,
+        shadow2: headerBoxShadow2,
+        shadow3: headerBoxShadow3,
+      ),
+    ],
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -81,5 +95,13 @@ class AppTheme {
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       backgroundColor: Color(0xFF0F1115),
     ),
+    shadowColor: headerBoxShadow1,
+    extensions: const <ThemeExtension<dynamic>>[
+      CustomShadowColors(
+        shadow1: headerBoxShadow1,
+        shadow2: headerBoxShadow2,
+        shadow3: headerBoxShadow3,
+      ),
+    ],
   );
 }

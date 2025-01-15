@@ -10,8 +10,8 @@
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
-  /// File path: assets/icons/alarm.svg
-  String get alarm => 'assets/icons/alarm.svg';
+  /// File path: assets/icons/timer.svg
+  String get alarm => 'assets/icons/timer.svg';
 
   /// File path: assets/icons/down_arrow.svg
   String get downArrow => 'assets/icons/down_arrow.svg';
