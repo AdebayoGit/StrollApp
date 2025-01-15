@@ -1,0 +1,1 @@
+/// Contains JSON or ARB files for app translations and localization support
