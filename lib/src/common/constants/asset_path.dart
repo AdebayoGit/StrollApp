@@ -13,6 +13,7 @@ class AssetPaths {
   static const String timerIcon = 'assets/icons/timer.svg';
   static const String peopleIcon = 'assets/icons/people.svg';
   static const String arrowDownIcon = 'assets/icons/arrow_down.svg';
+  static const String micIcon = 'assets/icons/mic.svg';
 
   // Placeholder Images
   static const String userImage = 'assets/images/placeholders/Joey 2.png';

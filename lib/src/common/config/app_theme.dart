@@ -6,6 +6,7 @@ class AppTheme {
   static const Color headerBoxShadow1 = Color(0xFF000033);
   static const Color headerBoxShadow2 = Color(0xFFBEBEBE);
   static const Color headerBoxShadow3 = Color(0xFF24232F);
+  static const Color questionColor = Color(0xFFCBC9FFB2);
 
   static ThemeData lightTheme = ThemeData(
     primarySwatch: Colors.blue,
@@ -40,6 +41,15 @@ class AppTheme {
     buttonTheme: const ButtonThemeData(
       buttonColor: Colors.blue,
       textTheme: ButtonTextTheme.primary,
+    ),
+    cardColor: const Color(0xFF232A2E), // Card background color
+    cardTheme: CardTheme(
+      color: const Color(0xFF232A2E), // Card background
+      shadowColor: Colors.black.withOpacity(0.3),
+      elevation: 8, // Default elevation for 3D shadow effect
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12), // Card corner radius
+      ),
     ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       backgroundColor: Color(0xFF0F1115),
@@ -94,6 +104,15 @@ class AppTheme {
     ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       backgroundColor: Color(0xFF0F1115),
+    ),
+    cardColor: const Color(0xFF232A2E),
+    cardTheme: CardTheme(
+      color: const Color(0xFF232A2E),
+      shadowColor: Colors.black.withOpacity(0.3),
+      elevation: 8,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
     ),
     shadowColor: headerBoxShadow1,
     extensions: const <ThemeExtension<dynamic>>[
